@@ -8,10 +8,10 @@ import { TbVocabulary } from "react-icons/tb";
 const Success = () => {
   return (
     <>
-      <h2 className="font-extrabold text-5xl text-center mt-20 mb-10">
+      <h2 className="font-extrabold text-3xl md:text-5xl text-center mt-20 mb-10">
         Achievements from us
       </h2>
-      <div className="grid grid-cols-2 gap-4 container mx-auto">
+      <div className="grid md:grid-cols-2 gap-4 container mx-auto">
         <div className="shadow-2xl flex flex-col items-center justify-center animate__animated animate__fadeInLeft bg-gray-300 rounded-lg p-4">
           <h3 className="flex items-center text-3xl">
             <PiStudentFill /> Total students

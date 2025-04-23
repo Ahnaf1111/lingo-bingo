@@ -4,10 +4,10 @@ import std from "../assets/students.png";
 const About = () => {
   return (
     <div className="container mx-auto">
-      <h1 className="text-5xl font-extrabold text-center">
+      <h1 className=" text-3xl md:text-5xl font-extrabold text-center">
         Learn About Our Missions
       </h1>
-      <div className="flex flex-col md:flex-row justify-between items-center">
+      <div className="flex flex-col md:flex-row justify-between items-center p-2">
         <div className="flex-1">
           <h2 className="text-3xl font-bold">
             Our Progress: Turning Passion into Proficiency
@@ -21,10 +21,14 @@ const About = () => {
           </p>
         </div>
         <div className="flex-1">
-          <img src={aboutImg1} alt="" />
+          <img
+            className="md:rounded-t-3xl md:rounded-br-3xl"
+            src={aboutImg1}
+            alt=""
+          />
         </div>
       </div>
-      <div className="flex flex-col md:flex-row-reverse justify-between items-center">
+      <div className="flex flex-col md:flex-row-reverse justify-between items-center p-2">
         <div className="flex-1">
           <h2 className="text-3xl font-bold">
             Our Process: Learn the Smart Way
@@ -38,15 +42,19 @@ const About = () => {
           </p>
         </div>
         <div className="flex-1">
-          <img src={aboutImg2} alt="" />
+          <img
+            className="md:rounded-b-3xl md:rounded-tl-3xl"
+            src={aboutImg2}
+            alt=""
+          />
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center w-1/3 mx-auto">
+      <div className="flex flex-col justify-center items-center p-2 md:w-1/3 mx-auto">
         <div className="flex-1">
           <h2 className="text-3xl font-bold text-center my-4">
             From Recognition to Real-Life Use
           </h2>
-          <p className="text-gray-400 text-justify">
+          <p className="text-gray-400 md:text-justify">
             We believe language learning should be efficient, enjoyable, and
             effective. That’s why we designed a system that blends spaced
             repetition, real-world context, and engaging practice. Whether

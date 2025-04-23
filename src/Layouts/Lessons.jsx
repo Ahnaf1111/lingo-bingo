@@ -1,12 +1,13 @@
 import { Link, useLoaderData } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const Lessons = () => {
   const lessonData = useLoaderData();
   return (
-    <div className="font-Montserrat">
+    <div className="font-Montserrat bg-gradient-to-br from-blue-50 to-purple-100 ">
       <Navbar></Navbar>
-      <div className="font-Montserrat flex flex-col justify-center items-center gap-5">
+      <div className="font-Montserrat flex flex-col justify-center items-center gap-5 animate-fade-in">
         {lessonData.map((d) => (
           <Link
             key={d.ID}
@@ -26,6 +27,7 @@ const Lessons = () => {
           </Link>
         ))}
       </div>
+      <Footer></Footer>
     </div>
   );
 };
